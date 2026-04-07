@@ -27,7 +27,11 @@ async function getUnsplashImage(keyword) {
     encodeURIComponent(keyword),
     encodeURIComponent(keyword.replace(/おすすめ|ランキング|比較|TOP5/g, '').trim()),
     'beauty'
-  ];
+    // manga keywords
+  '育児 漫画 おすすめ',
+  '子育て 漫画 ランキング',
+  'ママ 漫画 感動',
+];
   for (const q of queries) {
     try {
       const url = `https://source.unsplash.com/800x450/?${q}`;
